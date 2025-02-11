@@ -4,11 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz UI</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="quiz_wrapper">
-        
+        <div class="quiz_header">
+            <div class="quiz_timer">
+                <i class="fa-regular fa-clock"></i>
+                <div class="quiz_timer_text">
+                    <span>Time remaining</span>
+                    <p>14:00:00</p>
+                </div>
+            </div>
+            <button id="quiz_submit">SUBMIT</button>
+        </div>
+        <div class="quiz_container">
+            <div class="quiz_question">
+                <h5>Question 1 of 10</h5>
+                <p>                    
+                    Tìm kiếm
+                    Thực hiện Nghị quyết 18 về sắp xếp tinh gọn bộ máy, các Ban Đảng Trung ương đã giảm hai đầu mối, trong đó 4/6 lãnh đạo mới được giao nhiệm vụ so với đầu nhiệm kỳ.
+                </p>
+                <ul>
+                    <li><span>A.</span><span>harum</span></li>
+                    <li><span>B.</span><span>harum</span></li>
+                    <li><span>C.</span><span>harum</span></li>
+                    <li><span>D.</span><span>harum</span></li>
+                </ul>
+
+            </div>
+            <div class="quiz_progress">
+                <svg>
+                    <circle r="50"></circle>
+                    <circle id="progress" r="50"></circle>
+                </svg>
+                <span id="progress_text">9/10</span>
+            </div>
+
+        </div>
+        <div class="quiz_numbers">
+            <button>Prew</button>
+            <ul>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+            </ul>
+            <button>Next</button>
+        </div>
     </div>
 </body>
 <script src="./main.js"></script>
