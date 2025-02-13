@@ -144,6 +144,12 @@
     color: #fff;
     transition: 0.5s;
   }
+  .quiz_question ul li.incorrect
+  {
+    background-color: red;
+    color: #fff;
+    transition: 0.5s;
+  }
   .quiz_question ul li span:nth-child(2)
   {
     margin-left: 1rem;
@@ -186,6 +192,10 @@
   }
   .quiz_numbers > ul > li.selected{
     background-color: var(--main-clr);
+    color: #fff;
+  }
+  .quiz_numbers > ul > li.incorrect{
+    background-color: red;
     color: #fff;
   }
   .quiz_numbers > ul > li.active{
